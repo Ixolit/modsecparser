@@ -1,5 +1,4 @@
 # modsecparser
---------------
 
 ## mod_security audit log parser
 
@@ -21,7 +20,9 @@ On subsequent runs, it will seek to the last position in the audit log index fil
 
 ## Getting started
 
-See the [sample configuration](docs/modsecparser-example.yml) for configuration details and the `modsecparser --help` output for runtime options.
+Before you can start you need to create a Postgres database with the [modsecparser schema](docs/schema.sql).
+
+See the [sample configuration](docs/modsecparser.yml-example) for configuration details and the `modsecparser --help` output for runtime options.
 
 You can use `flock(1)` to prevent concurrent runs when using a cronjob:
 
@@ -33,3 +34,5 @@ Output will be logged to `/var/log/modsecparser.log` by default.
 
  * Ruby >= 1.9.1
  * pg >= 0.13.2
+ * PostgreSQL >= 9.1
+ 
