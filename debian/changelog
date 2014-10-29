@@ -1,11 +1,5 @@
-modsecparser (0.0.2) squeeze; urgency=low
+modsecparser (0.1.0) wheezy; urgency=low
 
   * Initial release.
 
- -- Michael Renner <m.renner@ixolit.com>  Thu, 31 Jul 2014 15:32:00 +0000
-
-modsecparser (0.0.1) squeeze; urgency=low
-
-  * Initial release.
-
- -- Michael Renner <m.renner@ixolit.com>  Tue, 22 Jul 2014 11:51:00 +0000
+ -- Michael Renner <michael.renner@amd.co.at>  Wed, 29 Oct 2014 17:45:00 +0000

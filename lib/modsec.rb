@@ -10,7 +10,7 @@ require 'logger'
 
 module Modsec
 
-  VERSION = '0.0.2'
+  VERSION = '0.1.0'
 
   def self.logger
     unless @logger

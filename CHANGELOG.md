@@ -1,5 +1,5 @@
 # Changelog
 
-## FIXME 2014-10-??
+## 0.1.0 2014-10-29
 
-Initial public release
+ * Initial public release
