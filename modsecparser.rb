@@ -96,6 +96,11 @@ EOS
       options[:concurrent_auditlogdir] = v
     end
 
+    opts.on_tail('--version', 'Show version') do
+      puts "modsecparser version #{Modsec::VERSION}"
+      exit
+    end
+
     opts.on_tail('-h', '--help', 'Show this message') do
       puts opts
       exit
