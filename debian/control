@@ -1,0 +1,14 @@
+Source: modsecparser
+Section: ruby
+Priority: optional
+Maintainer: Michael Renner <michael.renner@amd.co.at>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Standards-Version: 3.9.3
+XS-Ruby-Versions: all
+
+Package: modsecparser
+Architecture: all
+Depends: ${misc:Depends}, ruby (>> 1.9.0) | ruby1.9.1, ruby (<< 4.5) | ruby1.9.1, libpgsql-ruby1.9.1 | ruby-pg
+Provides: modsecparser
+Description: mod_security log parser

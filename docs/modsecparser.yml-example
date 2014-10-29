@@ -1,0 +1,14 @@
+---
+concurrent_auditlog: /var/log/modsec_audit.log
+concurrent_auditlogdir: /var/log/modsec_audit
+dbhost: 192.0.2.10
+dbport: 5432
+dbuser: modsec
+dbpassword: trunkoperation
+dbname: auditlog
+loglevel: INFO
+# You can specify a list of rewrite patterns to normalize URIs before writing them to the database
+# This makes for easier aggregation and filtering of URIs which might contain request-specific parts
+uri_rewrite:
+  - [ '^(/confirm/(email|sms)/).*', '\1' ]
+  - [ '^(/captcha/).*', '\1' ]
