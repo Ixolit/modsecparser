@@ -22,7 +22,7 @@ On subsequent runs, it will seek to the last position in the audit log index fil
 
 Before you can start you need to create a Postgres database with the [modsecparser schema](docs/schema.sql).
 
-See the [sample configuration](docs/modsecparser.yml-example) for configuration details and the `modsecparser --help` output for runtime options.
+See the [sample configuration](docs/modsecparser-example.yml) for configuration details and the `modsecparser --help` output for runtime options.
 
 You can use `flock(1)` to prevent concurrent runs when using a cronjob:
 
