@@ -5,7 +5,7 @@
 This is a CLI tool which parses 
 [mod_security](https://www.modsecurity.org/) 
 [concurrent audit logs](https://github.com/SpiderLabs/ModSecurity/wiki/ModSecurity-2-Data-Formats#Concurrent_Audit_Log_Format)
-and writes them into a Postgres database. It is designed to be run from `cron(1)` in a schedule that fits your workload.
+and writes them into a [Postgres database](docs/example_transaction.md). It is designed to be run from `cron(1)` in a schedule that fits your workload.
 
 ## Modus operandi
 
