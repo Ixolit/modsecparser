@@ -26,6 +26,8 @@ module Modsec
       if @db.transaction_status != PGconn::PQTRANS_INTRANS
         Modsec::logger.debug('Starting new database transaction')
         @db.exec('BEGIN')
+        # Initialize SAVEPOINT in case the first write should fail
+        @db.exec('SAVEPOINT SP')
       end
 
       uri = transform_uri(tx.request_uri)
