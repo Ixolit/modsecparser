@@ -1,3 +1,9 @@
+modsecparser (0.1.1) wheezy; urgency=low
+
+  * Fix unhandled exception during writer errors
+
+ -- Michael Renner <michael.renner@amd.co.at>  Tue, 2 Dec 2014 17:45:00 +0000
+
 modsecparser (0.1.0) wheezy; urgency=low
 
   * Initial release.
