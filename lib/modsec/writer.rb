@@ -52,6 +52,9 @@ module Modsec
 
       begin
         @db.exec_prepared('insert_tx', values)
+        # We need to explicitly release the previous SAVEPOINT since overwriting it doesn't free the associated TXID
+        # See http://www.postgresql.org/docs/current/static/sql-savepoint.html
+        @db.exec('RELEASE SAVEPOINT SP')
         @db.exec('SAVEPOINT SP')
       # Trying to catch issues with broken transactions causing data type errors
       rescue Exception => e
