@@ -1,3 +1,9 @@
+modsecparser (0.1.2) wheezy; urgency=low
+
+  * Release savepoints to prevent Postgres out of memory errors
+
+ -- Michael Renner <michael.renner@amd.co.at>  Thu, 18 Dec 2014 15:15:00 +0000
+
 modsecparser (0.1.1) wheezy; urgency=low
 
   * Fix unhandled exception during writer errors
